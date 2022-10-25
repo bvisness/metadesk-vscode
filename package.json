@@ -1,8 +1,10 @@
 {
   "name": "metadesk-vscode",
   "displayName": "Metadesk Syntax",
-  "description": "",
+  "description": "Syntax highlighting for the Metadesk language by Dion Systems",
   "version": "0.0.1",
+  "publisher": "bvisness",
+  "repository": "https://github.com/bvisness/metadesk-vscode",
   "engines": {
     "vscode": "^1.72.0"
   },
