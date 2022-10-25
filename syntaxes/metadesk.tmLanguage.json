@@ -32,8 +32,12 @@
 		},
 		"single-string": {
 			"name": "string.quoted.single.metadesk",
-			"match": "(\"|'|`).*?(\\1|$)",
-			"patterns": [{ "include": "#string-escape" }]
+			"match": "(\"|'|`).*?((?<!\\\\)\\1|$)",
+			"captures": {
+				"0": {
+					"patterns": [{ "include": "#string-escape" }]
+				}
+			}
 		},
 		"triple-string": {
 			"name": "string.quoted.triple.metadesk",
