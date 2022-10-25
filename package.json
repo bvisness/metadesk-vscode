@@ -1,0 +1,25 @@
+{
+  "name": "metadesk-vscode",
+  "displayName": "Metadesk Syntax",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "metadesk",
+      "aliases": ["Metadesk", "metadesk"],
+      "extensions": [".metadesk",".mdesk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "metadesk",
+      "scopeName": "source.metadesk",
+      "path": "./syntaxes/metadesk.tmLanguage.json"
+    }]
+  }
+}
